@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNT Ckeck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+    <h1>DNT Visual Checker &lt;/&gt;</h1>
+        <?php require './views/toolbar.phtml'; ?>
+    <form method="post" id="dnt-form">
+        <div id="text-box" contenteditable="true" ><?=$_SESSION['text']?></div>
+        <textarea name="text" id="textarea" style="display:none"></textarea>
+    </form>
+
+    </div>
+
+<script type="module" src="./JS/main.js"></script>
+</body>
+</html>
+

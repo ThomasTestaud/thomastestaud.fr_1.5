@@ -1,0 +1,103 @@
+/**************PAGE***************/
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    background-color: #edf2f4;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form *+* {
+    margin-top: 0.5em;
+}
+
+#text-box {
+    height: 30em;
+    padding: 1em;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px inset;
+}
+
+
+/**************TOOLBAR**************/
+
+.toolbar {
+    margin: 0.5em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toolbar div {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar *+* {
+    margin-left: 1em;
+}
+
+input,
+button {
+    padding: 1em;
+    height: 3.5em;
+    max-width: 10em;
+    border-radius: 2em;
+    border: 1px solid grey;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+    transition: box-shadow 0.4s;
+}
+
+button {
+    padding: 0.5em;
+    width: 3.5em;
+}
+
+button svg {
+    height: 2em;
+}
+
+input:hover,
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+}
+
+
+
+/*************SCANNER************/
+
+.validate-item,
+.unvalidate-item,
+.in-between {
+    /*padding: 0em 0.2em;*/
+
+    /*margin: 0em 0.1em;*/
+    border-radius: 1em;
+}
+
+.validate-item {
+    background-color: #8ac926;
+}
+
+.unvalidate-item {
+    background-color: #e85a5a;
+}
+
+.in-between {
+    background-color: #5bd3ff;
+}
